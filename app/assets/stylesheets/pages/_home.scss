@@ -8,11 +8,43 @@
   height: 100vh;
   width: 100vw;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
+.background-title {
+  text-transform: uppercase;
+  font-size: 4rem;
+  color: $b-grey-text;
+  margin: 0.5rem 0.5rem;
+  line-height: 100%;
+  font-weight: 500;
+  font-family: "pimpernel", serif;
+}
+
+.background-subtitle {
+  color: $b-grey-dark;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  line-height: 2rem;
+}
+
+// page home
 #home-background {
   background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), image-url('parquet_floor.jpg');
   background-repeat:no-repeat;
   background-size: cover;
 }
 
+.socials {
+  position: absolute;
+  bottom: 3rem;
+  right: 4rem;
+  a {
+    color: $b-grey-icons;
+  }
+  i {
+    font-size: 3rem;
+  }
+}
