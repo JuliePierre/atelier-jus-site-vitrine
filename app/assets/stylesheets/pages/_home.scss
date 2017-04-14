@@ -2,3 +2,17 @@
  * CSS code specific to home page
  * (margin/padding adjustments)
  * ------------------------------------- */
+
+// Bannières
+.full-background {
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+#home-background {
+  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), image-url('parquet_floor.jpg');
+  background-repeat:no-repeat;
+  background-size: cover;
+}
+
