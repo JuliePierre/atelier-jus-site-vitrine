@@ -8,12 +8,22 @@
   height: 100vh;
   width: 100vw;
   position: relative;
+}
+
+#clock-home {
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+}
+
+.bg-content-container {
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
 }
 
-.background-title {
+.bg-title {
   text-transform: uppercase;
   font-size: 4rem;
   color: $b-grey-text;
@@ -21,18 +31,20 @@
   line-height: 100%;
   font-weight: 500;
   font-family: "pimpernel", serif;
+  margin-top: 3rem;
 }
 
-.background-subtitle {
+.bg-subtitle {
   color: $b-grey-dark;
   text-transform: uppercase;
   font-size: 1.3rem;
   line-height: 2rem;
+  font-weight: 400;
 }
 
 // page home
 #home-background {
-  background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), image-url('parquet_floor.jpg');
+  background: image-url('parquet_floor.jpg');
   background-repeat:no-repeat;
   background-size: cover;
 }
@@ -46,5 +58,12 @@
   }
   i {
     font-size: 3rem;
+  }
+}
+
+.bg-logo {
+  margin-top: 2rem;
+  img {
+    height: 18rem;
   }
 }

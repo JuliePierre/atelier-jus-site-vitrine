@@ -1,10 +1,15 @@
 // polices
+@import url('https://fonts.googleapis.com/css?family=Muli:200,300,400,400i,600,600i,700,800,900');
+
 @font-face {
   font-family: 'pimpernel';
   src:font-url('pimpernel.otf');
 }
 
-// brand-color
+// body
+body {
+  font-family: 'Muli', sans-serif;
+}
 
 // text colors
 $b-grey-text: #575756;
