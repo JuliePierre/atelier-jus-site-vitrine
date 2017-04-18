@@ -26,7 +26,7 @@
 .bg-title {
   text-transform: uppercase;
   font-size: 4rem;
-  color: $b-grey-text;
+  color: $b-grey;
   margin: 0.5rem 0.5rem;
   line-height: 100%;
   font-weight: 500;
@@ -54,7 +54,7 @@
   bottom: 3rem;
   right: 4rem;
   a {
-    color: $b-grey-icons;
+    color: $b-grey-light;
   }
   i {
     font-size: 3rem;
