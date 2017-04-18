@@ -13,6 +13,11 @@
   left: 0;
   right: 0;
   bottom: 0;
+  @media (max-width: 376px) {
+    height: 7rem;
+    width: 7rem;
+    border: 6px solid $b-grey-light;
+  }
   .top {
     position: absolute;
     width: 3px;
@@ -63,6 +68,10 @@
     margin: auto;
     background: $b-red;
     border-radius: 100%;
+    @media (max-width: 376px) {
+      height: 1.5rem;
+      width: 1.5rem;
+    }
   }
 
   .hour {
@@ -79,10 +88,14 @@
       content: "";
       background: $b-orange;
       height: 4rem;
-      width: 0.8rem;
+      width: 0.6rem;
       top: 2rem;
       right: -0.1rem;
       border-radius: 14px;
+      @media (max-width: 376px) {
+        height: 2.8rem;
+        top: 0.9rem
+      }
     }
   }
   .minute {
@@ -121,6 +134,11 @@
       top: 0.6rem;
       right: 0px;
       border-radius: 5px;
+      @media (max-width: 376px) {
+        height: 3rem;
+        width: 0.3rem;
+        top: 0.2rem;
+      }
     }
   }
 }
