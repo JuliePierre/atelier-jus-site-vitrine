@@ -37,7 +37,7 @@
   font-family: "pimpernel", serif;
   margin-top: 3rem;
   @media (max-width: 375px) {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 
@@ -48,8 +48,8 @@
   line-height: 2rem;
   font-weight: 400;
   @media (max-width: 376px) {
-    font-size: 1rem;
-    line-height: 1.5rem;
+    font-size: 0.8rem;
+    line-height: 1rem;
   }
 }
 
@@ -71,8 +71,8 @@
     font-size: 3rem;
   }
   @media (max-width: 376px) {
-    bottom: 2rem;
-    right: 2rem;
+    bottom: 1rem;
+    right: 1rem;
   }
 }
 
@@ -81,7 +81,7 @@
   img {
     height: 18rem;
     @media (max-width: 376px) {
-      height: 14rem;
+      height: 10rem;
     }
   }
 }
