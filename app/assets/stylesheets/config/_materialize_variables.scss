@@ -9,21 +9,33 @@
     font-size: 11px;
   }
 }
-@media only screen and (min-width: 376px) {
+@media only screen and (min-width: $small-screen) {
   /* line 6, /usr/local/Cellar/rbenv/1.0.0/versions/2.3.1/lib/ruby/gems/2.3.0/gems/materialize-sass-0.98.1/app/assets/stylesheets/materialize/components/_typography.scss */
   html {
     font-size: 14px;
   }
 }
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: $medium-screen) {
   /* line 6, /usr/local/Cellar/rbenv/1.0.0/versions/2.3.1/lib/ruby/gems/2.3.0/gems/materialize-sass-0.98.1/app/assets/stylesheets/materialize/components/_typography.scss */
   html {
     font-size: 15px;
   }
 }
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: $large-screen) {
   /* line 6, /usr/local/Cellar/rbenv/1.0.0/versions/2.3.1/lib/ruby/gems/2.3.0/gems/materialize-sass-0.98.1/app/assets/stylesheets/materialize/components/_typography.scss */
   html {
     font-size: 16px;
+  }
+}
+@media only screen and (min-width: $very-large-screen) {
+  /* line 6, /usr/local/Cellar/rbenv/1.0.0/versions/2.3.1/lib/ruby/gems/2.3.0/gems/materialize-sass-0.98.1/app/assets/stylesheets/materialize/components/_typography.scss */
+  html {
+    font-size: 18px;
+  }
+}
+@media only screen and (min-width: $extra-large-screen) {
+  /* line 6, /usr/local/Cellar/rbenv/1.0.0/versions/2.3.1/lib/ruby/gems/2.3.0/gems/materialize-sass-0.98.1/app/assets/stylesheets/materialize/components/_typography.scss */
+  html {
+    font-size: 30px;
   }
 }

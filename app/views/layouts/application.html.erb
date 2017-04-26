@@ -14,9 +14,19 @@
     <%= action_cable_meta_tag %>
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <link rel="icon" type="image/png" href="<%= image_path 'favicon.png' %>">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
   </head>
   <body>
     <%= yield %>
     <%= javascript_include_tag 'application' %>
+    <script>
+      $(document).ready(function(){
+        $('.scrollspy').scrollSpy();
+      });
+    </script>
+    <script>
+      $(".button-collapse").sideNav();
+    </script>
   </body>
 </html>
