@@ -7,12 +7,14 @@
     <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
 
     <!-- Menu scrollspy sur ordinateur seulement -->
-    <ul class="right hide-on-med-and-down table-of-contents">
-      <li><a href="#notre-methode">Notre méthode</a></li>
-      <li><a href="#nos-jus">Nos jus</a></li>
-      <li><a href="#qui-sommes-nous">Qui sommes-nous ?</a></li>
-      <li><a href="#ou-nous-trouver">Où nous trouver ?</a></li>
-    </ul>
+    <div id="desktop-menu" class="right hide-on-med-and-down ">
+      <ul class="table-of-contents">
+        <li><a href="#notre-methode">Notre méthode</a></li>
+        <li><a href="#nos-jus">Nos jus</a></li>
+        <li><a href="#qui-sommes-nous">Qui sommes-nous ?</a></li>
+        <li><a href="#ou-nous-trouver">Où nous trouver ?</a></li>
+      </ul>
+    </div>
     <!-- ************************** -->
 
     <!-- Menu sur mobile -->
@@ -26,26 +28,57 @@
   </div>
 </nav>
 
-
 <!-- Contenu de la page : attention aux id des parties pour le menu scrollspy -->
 
 <!-- Banner -->
-
+<%= image_tag('background-image.jpg', id: 'image-banner-home') %>
 <!-- ************************** -->
 
 <!-- Punchline -->
-
+<div class="global-container center-align padded">
+  <h1 class="pimpernel uppercase">Le bio comme tu ne l'as jamais bu !</h1>
+</div>
 <!-- ************************** -->
 
 <!-- Méthode de fabrication -->
-<div id="notre-methode" class="section scrollspy">
-  <p>Notre méthode</p>
+<div id="notre-methode" class="section scrollspy bg-grey section-container">
+  <h4 class="center-align b-grey section-title">Processus de fabrication</h4>
+  <p class="center-align">Chez Atelier Jus, nous utilisons le pressage à froid pour extraire le meilleur des fruits et légumes.
+  <br>
+  Ce procédé de fabrication unique permet de préserver les vitamines, enzymes et minéraux afin d'obtenir un goût authentique.</p>
+  <div id="notre-methode-process">
+    <div class="row">
+      <div class="col s12 m4">
+        <%= image_tag('selection-fruits.png') %>
+      </div>
+      <div class="col s12 m4">
+        <%= image_tag('presse.png') %>
+      </div>
+      <div class="col s12 m4">
+        <%= image_tag('bouteille.png') %>
+      </div>
+    </div>
+  </div>
+  <p class="center-align">Nos délicieux fruits et légumes bio sont broyés et ensuite écrasés sous une presse hydraulique exerçant une pression de plus de 500kg.</p>
 </div>
 <!-- ************************** -->
 
 <!-- Présentation des jus -->
-<div id="nos-jus" class="section scrollspy">
-  <p>Nos jus</p>
+<div id="nos-jus" class="section scrollspy section-container">
+  <h4 class="center-align b-grey section-title">Nos délicieux jus</h4>
+  <p class="center-align">Les jus pressés à froid sont excellents pour la santé, ils donnent de l'énergie et rendent plus beau - si si ! -
+  <br>
+  Voici un aperçu de nos délicieuses créations.</p>
+  <div id="section-jus">
+    <div class="row">
+      <%= render 'shared/card-juice', bg_color: 'orange', photo: 'bouteille.png' %>
+      <%= render 'shared/card-juice', bg_color: 'yellow', photo: 'bouteille.png' %>
+    </div>
+    <div class="row">
+      <%= render 'shared/card-juice', bg_color: 'red', photo: 'bouteille.png' %>
+      <%= render 'shared/card-juice', bg_color: 'green', photo: 'bouteille.png' %>
+    </div>
+  </div>
 </div>
 <!-- ************************** -->
 

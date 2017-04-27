@@ -1,0 +1,24 @@
+.card-juice {
+  height: 32rem;
+  padding: 3rem;
+  &:hover {
+    opacity: 0.6;
+    .card-juice-picture {
+      display: none;
+    }
+    .card-juice-title {
+      display: block;
+    }
+  }
+}
+.card-juice-title {
+  text-align: center;
+  margin-top: 0;
+  font-family: 'pimpernel';
+  display: none; // s'affiche au hover de la carte
+}
+
+.card-juice-picture {
+  height: 100%;
+  width: 100%;
+}

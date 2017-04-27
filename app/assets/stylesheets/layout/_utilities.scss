@@ -6,25 +6,58 @@
 
 // Paddings
 .padded {
-  padding-top: 5em;
-  padding-bottom: 5em;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+.global-container {
+  margin: 0 6rem;
+}
+.section-container {
+  padding: 3rem 6rem;
+}
+.row {
+  margin: 0;
 }
 
 // Backgrounds
 .bg-black {
-  background: #4a4a4a;
+  background: $b-black;
 }
 .bg-grey {
-  background: #aeaeae;
+  background: $b-grey-light;
 }
-.bg-blue {
-  background: #00a3e1;
+.bg-orange {
+  background: $b-orange-light;
 }
-.bg-dark-blue {
-  background: #453926;
+.bg-yellow {
+  background: $b-yellow-light;
+}
+.bg-red {
+  background: $b-red-light;
+}
+.bg-green {
+  background: $b-green-light;
 }
 
 // Alignments
 .center-align {
   text-align: center;
+}
+
+// Polices
+.pimpernel {
+  font-family: 'pimpernel';
+}
+.uppercase {
+  text-transform: uppercase;
+}
+
+// Titles
+.title-section {
+  font-weight: 300;
+}
+
+// Couleurs
+.b-grey {
+  color: $b-grey-dark;
 }

@@ -5,30 +5,34 @@ nav {
   background-size: cover;
   padding: 0 6rem;
   height: 6rem;
-  line-height: 6rem;
+  line-height: 5rem;
 }
 
 .brand-logo {
   height: 100%;
   padding: 0.5rem 0 !important;
+  display: block !important;
   img {
     height: 100%;
   }
 }
 
-.table-of-contents a {
-  display: inline-block;
-  font-weight: 300;
-  color: white;
-  padding: 0;
-  height: 1.2rem;
-  line-height: 1rem;
-  letter-spacing: 0;
-  margin-left: 1rem;
-  &:hover {
+#desktop-menu {
+  .table-of-contents a {
+    display: inline-block;
+    font-weight: 300;
     color: white;
-    border-bottom: 1px solid $b-green;
-    border-left: none;
     padding: 0;
+    height: 1.2rem;
+    line-height: 1rem;
+    letter-spacing: 0;
+    margin-left: 3rem;
+    font-size: 1.2rem;
+    &:hover {
+      color: white;
+      border-bottom: 1px solid $b-green;
+      border-left: none;
+      padding: 0;
+    }
   }
 }
