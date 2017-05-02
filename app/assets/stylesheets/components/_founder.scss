@@ -1,5 +1,8 @@
 .founder {
   display: flex;
+  @media (mx-width: 992px) {
+    flex-direction: column;
+  }
 }
 .founder-image {
   flex: 0 0 50%;
