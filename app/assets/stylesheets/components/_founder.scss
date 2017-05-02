@@ -1,0 +1,22 @@
+.founder {
+  display: flex;
+}
+.founder-image {
+  flex: 0 0 50%;
+  background-size: cover;
+  min-height: 450px;
+  background-position: center right;
+}
+.founder-bio {
+  flex: 0 0 50%;
+  padding: 0 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  h3 {
+    margin-top: 0;
+    font-style: italic;
+    font-weight: bolder;
+    font-size: 2rem;
+  }
+}
